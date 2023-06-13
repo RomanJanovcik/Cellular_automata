@@ -37,7 +37,8 @@ initial_state = np.random.choice([0, 1], size=grid_size, p=[0.9, 0.1])
 automaton = CellularAutomaton(grid_size, rules, initial_state)
 
 # Simulate the automaton for a certain number of steps
-states = automaton.simulate(num_steps=100)
+num_steps = 100
+states = automaton.simulate(num_steps)
 
 def toggle_animation():
     """
